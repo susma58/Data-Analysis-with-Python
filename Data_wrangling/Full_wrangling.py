@@ -41,13 +41,14 @@ merged = pd.merge(students, grades, on = 'ID', how='left')
 print(merged)
 
 
-"""
+
 inner: only matching rows
 left: all from left + matches
 outer: union of all
 right: all from right + matches
 """
 
+"""
 # Concatenation stacking
 df1 = pd.DataFrame({'A': [1,2]})
 df2 = pd.DataFrame({'A': [3,4]})
@@ -88,7 +89,7 @@ df.set_index('Name').loc['Alice']   # specific index
 
 
 
-"""
+""""
 Exercise Task:
 Create two dataframes: students and scores
 Merge them with .merge(), using left join
